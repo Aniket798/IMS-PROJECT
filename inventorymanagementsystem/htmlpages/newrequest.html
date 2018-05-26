@@ -1,0 +1,31 @@
+<div class="ui container">
+    <h1 style="text-align:center">NEW REQUESTS</h1>
+    <div class="ui form">
+        <div class="field">
+            <label>Customer name</label>
+            <input type="text" placeholder="name"  ng-model="Dname"/>
+            </div>
+            <div class="field">
+            <label>customer email id</label>
+            <input type="email" placeholder="some@gmail.com"  ng-model="Demail">
+
+                <div class="two wide fields">
+                    <div class="field">
+                        <label>quantity</label>
+                        <input type="number" placeholder:"55"  ng-model="Dquantity">
+                    <div class="field">
+                        <label>item name</label>
+                        <select  ng-model="Ditem" placeholder:"select">
+                            <option ng-repeat="x in $root.addData">{{x.newItem}}</option>
+
+                        </select>
+                        </div>
+                            <button class="ui secondary button" type="submit" ng-click="submitData()">submit</button>
+                            <button class="ui button" type="reset">reset</button>
+                    </div> 
+                    
+                                      
+                </div>
+        </div>
+    </div>
+</div>

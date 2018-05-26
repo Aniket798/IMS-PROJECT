@@ -1,0 +1,27 @@
+<div class="ui container">
+        <h1 style="text-align:center"> REQUESTS INFORMATION</h1>
+    <table class="ui unstackable table">
+        <thead>
+        <tr>
+            <th>customer name</th>
+            <th>customer id</th>
+            <th>quantity</th>
+            <th>item</th>
+            <th class="right aligned">Approval status</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="x in $root.formData">
+            <td>{{x.customname}}</td>
+            <td>{{x.customid}}</td>
+            <td>{{x.Quantity}}</td>
+            <td>{{x.Item}}</td>
+            <td class="right aligned">{{x.Status}}</td>
+            </tr>
+         </tr>
+    </tbody>
+   
+<div ng-show="$root.formData.length===0?true:false" class="ui header">NO REQUEST FOUND
+</div>
+
+

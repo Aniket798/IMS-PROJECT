@@ -1,0 +1,25 @@
+<div class="ui container">
+        <h1 style="text-align:center">FOR APPROVAL</h1>
+        <table class="ui unstackable table">
+            <thead>
+            <tr>
+                <th>customer name</th>
+                <th>customer id</th>
+                <th>quantity</th>
+                <th>item</th>
+                <th class="right aligned">Approval status</th>
+            </tr>
+        </thead>
+             <tr ng-repeat="x in $root.formData|pendingReqFilter">
+                <td>{{x.customname}}</td>
+                <td>{{x.customid}}</td>
+                <td>{{x.Quantity}}</td>
+                <td>{{x.Item}}</td>
+                <td class="right aligned"><input type="button" ng-click="approve(x)" value="Approve">//<input type="button" ng-click="reject(x)" value="Reject"></td>
+        
+                </tr> 
+        </table>
+        
+    </div>
+    
+    

@@ -1,0 +1,71 @@
+
+<html ng-app='myApp'>
+    <head>
+        <script src="./script/JS/angular.min.js"></script>
+        <script src="./script/JS/angular-route.js"></script>
+        <script src="./script/JS/jquery.min.js"></script>
+        <script src="./script/app.js"></script>
+        <script src="./script/controllers/homeController.js"></script>
+        <script src="./script/controllers/requestController.js"></script>
+        <script src="./script/controllers/ApprovalController.js"></script>
+        <script src="./script/controllers/superadminController.js"></script>
+        <script src="./script/controllers/newrequestController.js"></script>
+        <script src="script/controllers/itemController.js"></script>
+        <script src="./script/JS/semantic.min.js"></script>
+        <script src="./script/JS/newrequest.js"></script>
+        <script src="./script/filter/pendingReqFilter.js"></script>
+        <link rel="stylesheet" href="./css/semantic.min.css">
+              <style>
+         #header
+            {
+                width: 100%;
+                height: 100px;
+                background: silver;
+            }
+            #logo
+            {
+                width:30%;
+                height:100px;
+                float: left;
+            }
+             
+             #new{
+                 width: 70%;
+                 height: 100px;
+                 float: left;
+             }
+             ul li
+             {
+                 list-style:none;
+                 float:left;
+                 width: 15%;
+                 height: 50px;
+                 line-height:50px;
+                 text-align: center;
+             }</style>
+ </head>
+    <body>
+             <div id="header">
+                    <div id="logo">
+                        <h1><font color="white">IMS PROJECT</font></h1>
+                    </div>
+                    <div id="new">
+                            <ul>
+                              <div class="ui inverted menu">
+                                  
+                                    <li><a class="active item" href="#!">home</a></li>
+                                    <li><a class="item" href="#!newrequest">newrequest</a></li>
+                                    <li><a class="item" href="#!request">request</a></li>
+                                    <li><a class="item" href ="#!approval">Approval</a></li>
+                                    <li><a  class="item" href="#!superadmin">superadmin</a></li>
+                                    </div>
+                            </ul>
+                            </div>
+    
+                    </div>
+                    
+             </div>
+<div ng-view></div>
+
+    </body>
+</html>
